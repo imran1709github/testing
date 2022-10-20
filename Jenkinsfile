@@ -12,7 +12,7 @@ podTemplate(containers: [
         args: '30d')
   ]) {
 
-    node(POD_LABEL) {
+ /*   node(POD_LABEL) {
         stage('Get a Maven project') {
             git 'https://github.com/spring-projects/spring-petclinic.git'
             container('maven') {
@@ -23,7 +23,7 @@ podTemplate(containers: [
                 }
             }
         }
-
+*/
         stage('Get a Python Project') {
             git url: 'https://github.com/hashicorp/terraform.git', branch: 'main'
             container('python') {
