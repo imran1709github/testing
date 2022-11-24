@@ -42,9 +42,9 @@ podTemplate(yaml: '''
     stage('Build Java Image') {
       container('kaniko') {
         stage('Build a Go project') {
-          sh '''
-            /kaniko/executor --context `pwd` --destination suyogpathri/kaniko-demo-image:2.0
-          '''
+#          sh '''
+#            /kaniko/executor --context `pwd` --destination suyogpathri/kaniko-demo-image:2.0
+#          '''
         }
       }
     }
